@@ -107,9 +107,11 @@ public class WaveView extends View
         {
             Circle lastCircle = dataList.get(0);
             int maxDistance = centerX / MAX_WAVE;
-            if (lastCircle.radius > maxDistance)
+            System.out.println(maxDistance);
+            if (lastCircle.radius > maxDistance && dataList.size()<MAX_WAVE)
             {
                 Circle circle = circleFactory();
+                circle.radius = 1;
                 dataList.addFirst(circle);
             }
         }// end if
@@ -119,7 +121,7 @@ public class WaveView extends View
     private Circle circleFactory()
     {
         Circle c = new Circle();
-        c.radius = 30;
+        c.radius = 120;
 
         return c;
     }
@@ -136,8 +138,6 @@ public class WaveView extends View
             paint.setColor(Color.WHITE);
             paint.setAlpha(max_alpha);
             paint.setAntiAlias(true);
-
-            radius = 1;
         }
     }
 }// end class
