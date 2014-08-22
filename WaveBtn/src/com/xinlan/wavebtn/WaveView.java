@@ -14,11 +14,11 @@ import android.view.View;
 
 public class WaveView extends View 
 {
-    public static final int MAX_WAVE=3;
+    public static final int MAX_WAVE=4;
     private boolean isPlay = false;
     private LinkedList<Circle> dataList = new LinkedList<Circle>();
     private int max_alpha = 140;
-    private float dRadius = 1.5f;
+    private float dRadius = 2f;
 
     public WaveView(Context context)
     {
