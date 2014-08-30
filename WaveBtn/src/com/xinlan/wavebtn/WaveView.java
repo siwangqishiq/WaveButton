@@ -12,7 +12,7 @@ import android.graphics.Shader.TileMode;
 import android.util.AttributeSet;
 import android.view.View;
 
-public class WaveView extends View 
+public final class WaveView extends View 
 {
     public static final int MAX_WAVE=4;
     private boolean isPlay = false;

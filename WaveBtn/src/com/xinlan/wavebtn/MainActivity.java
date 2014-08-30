@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class MainActivity extends Activity
+public final class MainActivity extends Activity
 {
     private View btn;
     private WaveView mWave;
